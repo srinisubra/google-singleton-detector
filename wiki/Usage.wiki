@@ -1,0 +1,27 @@
+#summary Details on how to use this program.
+
+=Usage=
+
+{{{
+Usage: java -jar sd.jar [-(VvshmfoSb)] [-t <threshold>] <classes dir/jar> <output file> [<package>]
+ -V       - Print version and exit
+ -v       - Enable verbose mode
+ -s       - Hide singletons
+ -h       - Hide hingletons
+ -m       - Hide mingletons
+ -f       - Hide fingletons
+ -o       - Hide others
+ -S       - Print statistics upon completion
+ -b       - Add stats banner to the graph
+ -t <val> - Threshold (minimum edges required to draw a node)
+}}}
+
+The most important options here are probably s, h, m and f, which when included prevent the program from finding certain types of *ingletons.
+
+The <class dir/jar> parameter is the directory or jar which contains the classes you wish to analyze.  The <output file> should be a .graphml file to allow your graph viewer to recognize the format.  The <package> parameter may be included to limit the analyzed classes to a certain package.
+
+Once you have a GraphML file, you'll need yEd to view it (we use yWorks to specify node color and shape, which can be read by yEd).  yEd is a graph viewer and editor which can handle large graphs and provide custom layouts quickly, and can be found here.  Since the GraphML files produced by this program don't define the size of nodes or the overall layout, you have to do a few things to make it readable.
+
+First, you need to resize the nodes (Tools -> Fit Node to Label)
+
+Then just apply some type of layout.  I find smart organic to be particularly useful (Layout -> Organic -> Smart), but circular and hierarchical can be very effective depending on your graph.
