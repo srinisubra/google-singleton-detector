@@ -11,7 +11,7 @@ Singletons have a public static method that returns an instance of themselves, a
 == Example ==
 {{{
 public class Singleton {
-  private static instance;
+  private static Singleton instance;
 
   public static Singleton getInstance() {
     if (instance == null) {
