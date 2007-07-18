@@ -10,7 +10,7 @@ Check out my rant [http://code.google.com/p/google-singleton-detector/wiki/WhySi
 
 ===What are all of these silly words?===
 
-As you use this program, you'll probably notice that we're currently showing four different types of static usage, which have some interesting names.  They are:
+As you use this program, you'll probably notice that we're currently showing four different types of static usage, which have some... interesting names.  They are:
 
 || *Name* || *Color* || *Description* ||
 || Singleton || red || A class for which there should only be one instance in the entire system at any given time.  This program detects singletons which enforce their own singularity, which means they keep one static instance of themselves and pass it around through a static getter method.||
@@ -27,7 +27,6 @@ If a node is a hingleton, it will have a second class name (in parens); the firs
 ===Aren't ingletons okay to use?===
 
 Well, each of these types of _inglton could be fine if used properly, but the problem is they're often misused.  You'll notice that we've color coded each class in a natural way; the red classes (Singletons) are most likely to be dangerous, whereas orange classes (Hingletons) are less likely to be dangerous, all the way down to green classes (Fingletons) which can often be fine.  It's up to you to decided what types of static state you really hate and what types you can live with; you can disable the detection of each type to suite your needs.
-
 
 
 
