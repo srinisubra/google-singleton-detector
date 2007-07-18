@@ -1,4 +1,5 @@
 #summary A brief explanation of the problems with singletons.
+#labels Featured
 
 = Why Singletons Are Controversial =
 
