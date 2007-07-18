@@ -5,12 +5,16 @@
 == Description ==
 Blah blah blah
 
-== Name Origin ==
-Blah blah balh
-
 == Example ==
 {{{
 public class Singleton {
-  private static 
+  private static instance;
+
+  public static Singleton getInstance() {
+    if (instance == null) {
+      instance = new Singleton();
+    }
+    return instance;
+  }
 }
 }}}
