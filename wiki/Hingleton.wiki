@@ -1,9 +1,9 @@
-#summary Information about the Mingleton class.
+#summary Information about the Hingleton class.
 
 = Hingleton =
 
 == Description ==
-Derived from “helper singleton,” a Hingleton is a class which turns another class into a singleton by enforcing that classes singularity.
+Derived from “helper singleton,” a Hingleton is a class which turns another class into a singleton by enforcing that class's singularity.  The offending class is the Hingleton, which "hingles" the other class.
 
 == Criteria ==
 Hingletons have a public static method that returns an instance of a non-primitive object, and they have at least one private static non-final field of the same type.
@@ -21,3 +21,4 @@ public class Hingleton {
   }
 }
 }}}
+(Hingleton hingles Foo)
