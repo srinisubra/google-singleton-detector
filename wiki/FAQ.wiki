@@ -1,0 +1,42 @@
+#summary Frequently asked questions about the Singleton Detector.
+
+===How do I see the graph?===
+
+The only graph format currently supported is GraphML, which can be viewed using a program called yEd.  See usage for more details.
+
+===What's wrong with statics/singletons?===
+
+Check out my rant here.
+
+===What are all of these silly words?===
+
+As you use this program, you'll probably notice that we're currently showing four different types of static usage, which have some interesting names.  They are:
+
+*Singleton (red)* – A class for which there should only be one instance in the entire system at any given time.  This program detects singletons which enforce their own singularity, which means they keep one static instance of themselves and pass it around through a static getter method.
+
+*Hingleton (orange)* – Derived from “helper singleton,” a class which turns another class into a singleton by enforcing that classes singularity.
+
+*Mingleton (yellow)* – Derived from “Misko's singleton,” a class which has any static method that returns some state without taking any parameters.
+
+*Fingleton (green)* – Derived from “field singleton,” a class which contains a public, static field.
+
+===How are the node's labeled?===
+
+Each node will be color coded to show it's type (see above), and will contain the name of the class and it's package name (on separate lines, to save horizontal space).  If you specified a package at runtime, that prefix will be omitted from the package name (again, to save space).
+
+If a node is a hingleton, it will have a second class name (in parens); the first class is the helper class, and the second class is the singleton.  Remember that hingletons are helper classes which in effect turn another class into a singleton.
+
+===Aren't ___ingletons okay to use?===
+
+Well, each of these types of _inglton could be fine if used properly, but the problem is they're often misused.  You'll notice that we've color coded each class in a natural way; the red classes (Singletons) are most likely to be dangerous, whereas orange classes (Hingletons) are less likely to be dangerous, all the way down to green classes (Fingletons) which can often be fine.  It's up to you to decided what types of static state you really hate and what types you can live with; you can disable the detection of each type to suite your needs.
+
+
+
+
+
+
+
+
+
+
+
