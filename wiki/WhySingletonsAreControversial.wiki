@@ -1,6 +1,6 @@
 #summary A brief explanation of the problems with singletons.
 
-=Why Singletons Suck=
+= Why Singletons Are Controversial =
 
 While the singleton design pattern certainly has its uses and can be beneficial, the problem with singletons is that they are frequently overused, usually when a singleton really isn't necessary.  Using singletons so frequently introduces a lot of static state to a program, which many people have observed has some negative side effects.
 
