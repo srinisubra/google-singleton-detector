@@ -1,0 +1,21 @@
+#summary Information about the Fingleton class.
+
+= Fingleton =
+
+== Description ==
+Derived from "field singleton,” a Fingleton is a class which contains static fields.
+
+== Criteria ==
+Fingletons have at least one public static field.
+
+== Example ==
+{{{
+public class Fingleton {
+  public static Foo instance;
+
+  public Fingleton() {
+
+  }
+}
+}}}
+
