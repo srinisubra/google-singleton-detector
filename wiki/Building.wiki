@@ -1,0 +1,8 @@
+#summary A guide to building GSD from source.
+
+Building GSD is currently handled through [http://ant.apache.org/ ant] (version 1.7).  To build the project, simply enter
+{{{
+ant
+}}}
+This will produce a zip in the directory `target` with all dependencies.
+
