@@ -1,0 +1,20 @@
+#summary List of current limitations in the program.
+
+google-singleton-detector is still in its early stages, and has a few limitations at the moment.  If you find new limitations in your own use, please add them to this list.
+
+= Final Singletons =
+
+To detect a singleton, GSD looks for a private static non-final field of the class as well as a public static method which returns the class.  Specifically, we don't look at final fields in an effort to avoid tagging "magic values" as singletons, as most singletons are initialized in the getInstance() method (and therefore can't be final).  However, in some cases programmers do make singletons final and initialize them in a constructor or static initializer.  An example from hibernate-3.2, in which we don't label `SessionFactoryObjectFactory` as a singleton:
+
+{{{
+private static final SessionFactoryObjectFactory INSTANCE; //to stop the class from being unloaded
+private static final Log log;
+
+static {
+  log = LogFactory.getLog(SessionFactoryObjectFactory.class);
+  INSTANCE = new SessionFactoryObjectFactory();
+  log.debug("initializing class SessionFactoryObjectFactory");
+}
+}}}
+
+= Nested Singletons =
