@@ -1,8 +1,4 @@
 #summary A guide to building GSD from source.
 #labels Featured
 
-Building GSD is currently handled through [http://ant.apache.org/ ant] (version 1.7).  To build the project, go to a directory with build.xml (probably `google-singleton-detector/trunk/` and enter
-{{{
-ant
-}}}
-This will create the directory `target` with a zip file inside.
+Building GSD is currently handled through [http://ant.apache.org/ ant] (version 1.7).  To build the project, enter `ant` into the top directory (probably `trunk`).  This will create the directory `target` with a GSD-X.X.X.zip file inside.
