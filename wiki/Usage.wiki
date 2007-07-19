@@ -17,7 +17,7 @@ Usage: java -jar sd.jar [-(VvshmfoSb)] [-t <threshold>] <classes dir/jar> <outpu
  -t <val> - Threshold (minimum edges required to draw a node)
 }}}
 
-The most important options here are probably s, h, m and f, which when included prevent the program from finding certain types of ingletons.
+The most important options here are probably s, h, m and f, which when included prevent the program from finding certain types of `_`ingletons.
 
 The <class dir/jar> parameter is the directory or jar which contains the classes you wish to analyze.  The <output file> should be a .graphml file to allow your graph viewer to recognize the format.  The <package> parameter may be included to limit the analyzed classes to a certain package.
 
