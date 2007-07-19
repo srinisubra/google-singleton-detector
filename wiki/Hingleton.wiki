@@ -1,4 +1,4 @@
-#summary Information about the Hingleton class.
+#summary Information about the 'Hingleton' types.
 
 = Hingleton =
 
