@@ -1,4 +1,4 @@
-#summary Information about the "Fingleton" types
+#summary Information about the 'Fingleton' types
 
 = Fingleton =
 
