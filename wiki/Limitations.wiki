@@ -3,7 +3,7 @@
 
 = Limitations =
 
-google-singleton-detector is still in its early stages, and has a few limitations at the moment.  If you find new limitations in your own use, please add them to this list.
+Google Singleton Detector is still in its early stages, and has a few limitations at the moment.  If you find new limitations in your own use, please add them to this list.
 
 == Final Singletons/Hingletons ==
 
@@ -45,5 +45,4 @@ public class IO extends BoundedThreadPool {
 }}}
 
 This isn't tagged as a singleton because the field is of a type `Singleton`, not `IO`.  It also isn't tagged as a hingleton, because instance() returns `IO`, not 'Singleton'.
-
 
