@@ -3,6 +3,10 @@
 
 = How to Build GSD =
 
-Building GSD is currently handled through [http://ant.apache.org/ ant] (version 1.7).  To build the project, enter `ant` into the top directory (probably `trunk`).  This will create the directory `target` with a GSD-X.X.X.zip file inside.
+Building GSD is currently handled through [http://ant.apache.org/ ant] (version 1.7).  To build the project, enter 
+{{{
+ant
+}}}
+into the top directory (probably `trunk`).  This will create the directory `target` with a GSD-X.X.X.zip file inside.
 
 For more information on how to run the program, see [Usage].
