@@ -7,7 +7,7 @@ The only graph format currently supported is GraphML, which can be viewed using 
 
 ===What's wrong with statics/singletons?===
 
-Check out [http://code.google.com/p/google-singleton-detector/wiki/WhySingletonsAreControversial Why Singletons Are Controversial].
+Check out [http://code.google.com/p/google-singleton-detector/wiki/WhySingletonsAreControversial Why Singletons Are Controversial] or the [http://c2.com/cgi/wiki?search=Singleton Portland Pattern Repository's Singleton page].
 
 ===What are all of these silly words?===
 
@@ -28,3 +28,5 @@ If a node is a hingleton, it will have a second class name (in parens); the firs
 ===Aren't ingletons okay to use?===
 
 Well, each of these types of inglton could be fine if used properly, but the problem is they're often misused.  You'll notice that we've color coded each class in a natural way; the red classes (Singletons) are most likely to be dangerous, whereas orange classes (Hingletons) are less likely to be dangerous, all the way down to green classes (Fingletons) which can often be fine.  It's up to you to decided what types of static state you really hate and what types you can live with; you can disable the detection of each type to suite your needs.
+
+
