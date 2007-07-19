@@ -3,8 +3,10 @@
 
 =Usage=
 
+Unzip gsd-X.X.X.zip and run with the following command:
+
 {{{
-Usage: java -jar sd.jar [-(VvshmfoSb)] [-t <threshold>] <classes dir/jar> <output file> [<package>]
+java -jar gsd.jar [-(VvshmfoSb)] [-t <threshold>] <classes dir/jar> <output file> [<package>]
  -V       - Print version and exit
  -v       - Enable verbose mode
  -s       - Hide singletons
