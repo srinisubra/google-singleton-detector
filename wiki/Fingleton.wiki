@@ -1,9 +1,9 @@
-#summary Information about the Fingleton class.
+#summary Information about the "Fingleton" types
 
 = Fingleton =
 
 == Description ==
-Derived from "field singleton,” a Fingleton is a class which contains static fields.
+Derived from "field singleton,” a Fingleton is a class which contains static fields.  Many will consider these edge cases and not want to report on them.
 
 == Criteria ==
 Fingletons have at least one public static field.
@@ -18,4 +18,3 @@ public class Fingleton {
   }
 }
 }}}
-
