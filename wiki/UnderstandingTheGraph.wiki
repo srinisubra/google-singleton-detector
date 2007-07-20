@@ -21,9 +21,8 @@ There are six different types of nodes:
 
 Each node contains two lines of text; the first line is the name of the class
 that the node represents, and the second line is the package that class is in
-(this saves horizontal space).  If a package was passed as an argument at
-runtime, this prefix will be omitted from the package name (again, to save
-space).
+(this saves horizontal space).  If the <package> argument was passed at runtime, this prefix will be omitted from the package name (again, to save
+space).  Note that hingleton (orange) nodes will have an extra two lines surround by parens, which are the name and package of the class that is hingled by the hingleton (see [Hingleton] for more details).
 
 An arrow is drawn from one node to another if the first class directly uses
 the global state of the second.  In the case of singletons and hingletons,
