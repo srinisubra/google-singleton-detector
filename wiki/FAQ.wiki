@@ -1,29 +1,21 @@
 #summary Frequently asked questions about the Singleton Detector.
 #labels Featured
 
+=== What's wrong with statics/singletons? ===
+
+Check out [http://code.google.com/p/google-singleton-detector/wiki/WhySingletonsAreControversial Why Singletons Are Controversial] or the [http://c2.com/cgi/wiki?search=Singleton Portland Pattern Repository's Singleton page].
+
 ===How do I see the graph?===
 
 The only graph format currently supported is GraphML, which can be viewed using a program called yEd.  For more information, see [http://code.google.com/p/google-singleton-detector/wiki/Usage Usage].
 
-===What's wrong with statics/singletons?===
+=== How do I read the graph? ===
 
-Check out [http://code.google.com/p/google-singleton-detector/wiki/WhySingletonsAreControversial Why Singletons Are Controversial] or the [http://c2.com/cgi/wiki?search=Singleton Portland Pattern Repository's Singleton page].
+See [UnderstaingTheGraph Understanding the Graph].
 
-===What are all of these silly words?===
+=== What are all of these silly words? ===
 
-As you use this program, you'll probably notice that we're currently showing four different types of static usage, which have some... interesting names.  They are:
-
-|| *Name* || *Color* || *Description* ||
-|| [http://code.google.com/p/google-singleton-detector/wiki/Singleton Singleton] || red || A class for which there should only be one instance in the entire system at any given time.  This program detects singletons which enforce their own singularity, which means they keep one static instance of themselves and pass it around through a static getter method.||
-|| [http://code.google.com/p/google-singleton-detector/wiki/Hingleton Hingleton] || orange || Derived from “helper singleton,” a class which turns another class into a singleton by enforcing that classes singularity.||
-|| [http://code.google.com/p/google-singleton-detector/wiki/Mingleton Mingleton] || yellow || Derived from "method singleton,” a class which has any static method that returns some state without taking any parameters.||
-|| [http://code.google.com/p/google-singleton-detector/wiki/Fingleton Fingleton] || green || Derived from “field singleton,” a class which contains a public, static field. ||
-
-===How are the nodes labeled?===
-
-Each node will be color coded to show it's type (see above), and will contain the name of the class and it's package name (on separate lines, to save horizontal space).  If you specified a package at runtime, that prefix will be omitted from the package name (again, to save space).
-
-If a node is a hingleton, it will have a second class name (in parens); the first class is the helper class, and the second class is the hingled class.  Remember that hingletons are helper classes which in effect turn another class into a singleton.
+Well, I feel the need to apologize about that.  These were the names we started using when we were developing this app and just needed something to call them, and they've kind of stuck around.  They're not hard to pick up, and they're shorter than saying "a class that has this type of global state with these restrictions."
 
 ===Aren't `_`ingletons okay to use?===
 
