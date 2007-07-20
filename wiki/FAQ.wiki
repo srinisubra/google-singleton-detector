@@ -11,9 +11,9 @@ The only graph format currently supported is GraphML, which can be viewed using 
 
 === How do I read the graph? ===
 
-See [UnderstaingTheGraph Understanding the Graph].
+See [UnderstandingTheGraph Understanding the Graph].
 
-=== What are all of these silly words? ===
+=== What's with all these silly words? ===
 
 Well, I feel the need to apologize about that.  These were the names we started using when we were developing this app and just needed something to call them, and they've kind of stuck around.  They're not hard to pick up, and they're shorter than saying "a class that has this type of global state with these restrictions."
 
