@@ -15,7 +15,7 @@ See [UnderstandingTheGraph Understanding the Graph].
 
 === What's with all these silly words? ===
 
-Well, I feel the need to apologize about that.  These were the names we started using when we were developing this app and just needed something to call them, and they've kind of stuck around.  They're not hard to pick up, and they're shorter than saying "a class that has this type of global state with these restrictions."
+Actually, I feel the need to apologize about that.  These were the names we started using when we were developing this app and just needed something to call them, and they've kind of stuck around.  They're not hard to pick up, and they're shorter than saying "a class that has this type of global state with these restrictions."
 
 ===Aren't `_`ingletons okay to use?===
 
