@@ -48,4 +48,4 @@ This isn't tagged as a singleton because the field is of a type `Singleton`, not
 
 == Nested Jars ==
 
-As input, you can pass GSD a jar or a directory.  However, to read these properly it needs to be set in one mode or the other, so if you pass it a directory all jars inside of that directory will be ignored.  Hopefully I can fix this soon.
+As input, you can pass GSD a jar or a directory.  However, to read these properly it needs to be set in one mode or the other, so if you pass it a directory all jars inside of that directory will be ignored.  Hopefully this will be fixed soon.
