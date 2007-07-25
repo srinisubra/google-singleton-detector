@@ -3,6 +3,8 @@
 
 = Running GSD =
 
+Running GSD currently requires [http://java.sun.com/javase/downloads/index.jsp Java 1.5].
+
 Unzip gsd-X.X.X.zip and run with the following command:
 
 {{{
@@ -61,5 +63,4 @@ the global state of the second.  In the case of singletons and hingletons,
 this means that a class calls the getInstance() method of the singleton/
 hingleton.  For mingletons and fingletons, this means that a class access the
 non-primitive global state of another class.
-
 
