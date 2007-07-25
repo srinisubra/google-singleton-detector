@@ -26,7 +26,7 @@ where `SessionFactoryObjectFactory` is not tagged as a singleton because `INSTAN
 
 == Nested Singletons ==
 
-Since we currently look for fields of the same type as the class their in, we don't catch instances where the singleton is nested inside of another class, like a inner-class.  An example from jetty-5.1.4rc1:
+Since we currently look for fields of the same type as the class they're in, we don't catch instances where the singleton is nested inside of another class, like a inner-class.  An example from jetty-5.1.4rc1:
 
 {{{
 public class IO extends BoundedThreadPool {
