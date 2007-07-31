@@ -25,6 +25,18 @@ The most important options here are probably s, h, m and f, which when included 
 
 The <class dir/jar> parameter is the directory or jar which contains the classes you wish to analyze.  The <output file> should be a .graphml file to allow your graph viewer to recognize the format.  The <package> parameter may be included to limit the analyzed classes to a certain package and can be either one of two formats: org/apache/commons or org.apache.commons.
 
+Example:
+
+{{{
+java -jar gsd.jar -shS -t 2 foo.jar goo.graphml org/foo/myapp
+}}}
+
+= Running GSD =
+
+Running GSD currently requires [http://java.sun.com/javase/downloads/index.jsp Java 1.5].
+
+Unzip gsd-X.X.X.zip and run with the following command:
+
 =Viewing the Graph=
 
 ==GraphML==
