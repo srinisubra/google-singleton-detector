@@ -23,7 +23,7 @@ java -jar gsd.jar [-(VvshmfoSb)] [-t <threshold>] <classes dir/jar> <output file
 
 The most important options here are probably s, h, m and f, which when included prevent the program from finding certain types of `_`ingletons.
 
-The <class dir/jar> parameter is the directory or jar which contains the classes you wish to analyze.  The <output file> should be a .graphml file to allow your graph viewer to recognize the format.  The <package> parameter may be included to limit the analyzed classes to a certain package.
+The <class dir/jar> parameter is the directory or jar which contains the classes you wish to analyze.  The <output file> should be a .graphml file to allow your graph viewer to recognize the format.  The <package> parameter may be included to limit the analyzed classes to a certain package and can be either one of two formats: org/apache/commons or org.apache.commons.
 
 =Viewing the Graph=
 
@@ -63,4 +63,3 @@ the global state of the second.  In the case of singletons and hingletons,
 this means that a class calls the getInstance() method of the singleton/
 hingleton.  For mingletons and fingletons, this means that a class access the
 non-primitive global state of another class.
-
