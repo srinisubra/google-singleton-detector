@@ -28,8 +28,10 @@ The <class dir/jar> parameter is the directory or jar which contains the classes
 Example:
 
 {{{
-java -jar gsd.jar -shS -t 2 foo.jar goo.graphml org/foo/myapp
+java -jar gsd.jar -mfbS -t 2 foo.jar foo.graphml
 }}}
+
+ - Charts Singletons and Hingletons (but not Fingetons and Mingletons) for foo.jar, with a stats printout on completion, and a banner in the chart.
 
 = Running GSD =
 
