@@ -24,7 +24,3 @@ Well, each of these types of `_`inglton could be fine if used properly, but the 
 === GSD didn't detect <some class>.  Why not? ===
 
 Since GSD is still in development, it's not perfect.  If you know a class should have been tagged as a `_`ingleton but wasn't, check the [Limitations known limitations] wiki.  If your situation is not listed there, please report it as an issue and give an example of the type of class GSD is missing.  Contributions are always appreciated, so if you can fix the problem yourself you're welcome to submit a patch.
-
-=== GSD isn't reading files inside jars.  Why not? ===
-
-This is a [Limitations known limitation].  Currently GSD supports either class files inside of a directory or a jar, not a combination of the two.  If you're trying to analyze a code base that is spread across multiple jars, you'll have to unpack them all first.  We know this can be a pain, and hopefully will be resolved soon.
