@@ -61,7 +61,7 @@ There are six different types of nodes:
 
 || Color || Class || Description ||
 || Red || [Singleton] || A class for which there should only be one instance in the entire system at any given time. This program detects singletons which enforce their own singularity, which means they keep one static instance of themselves and pass it around through a static getter method. See ExampleSingleton ||
-|| Orange || [Hingleton] || Derived from “helper singleton,” a class which turns another class into a singleton by enforcing that class's singularity.  ||
+|| Orange || [Hingleton] || Derived from “helper singleton,” a class which turns another class into a singleton by enforcing that class's singularity.  See ExampleHingleton ||
 || Yellow || [Mingleton] || Derived from “method singleton” a class which has any static method that returns some state without taking any parameters. ||                
 || Green || [Fingleton] || Derived from “field singleton,” a class which contains a public static field. See ExampleFingleton ||
 || Light Blue (Ellipse) || Other || Any class which is directly dependent on a _ingleton. ||
