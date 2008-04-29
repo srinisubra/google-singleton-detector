@@ -12,7 +12,8 @@ Mingletons have a public static method that takes no parameters and returns a no
 {{{
 public class Mingleton {
   public static Foo getFoo() {
-    return Foo.getDefault();
+    return Foo.getDefault(); 
+    // or return new Foo();
   }
 }
 }}}
