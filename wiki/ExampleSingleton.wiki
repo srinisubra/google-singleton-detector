@@ -5,7 +5,7 @@ The following code shows a Singleton by our definition.
 {{{
 public class ClassOne {
   private static final ClassOne INSTANCE;
-  public ClassOne getInstance() {
+  public static ClassOne getInstance() {
     if (INSTANCE == null) {
       INSTANCE = new ClassOne();
     }
