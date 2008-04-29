@@ -1,0 +1,11 @@
+#summary An Example of a Mingleton
+
+The following code shows a Mingleton by our definition.
+
+{{{
+public class ClassOne {
+  public static ClassTwo getFoo() {
+    return INSTANCE;
+  }
+}
+}}}
