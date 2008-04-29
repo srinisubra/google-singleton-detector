@@ -1,0 +1,14 @@
+#summary An Example of a Fingleton
+
+= Introduction =
+
+Add your content here.
+
+
+= Details =
+
+{{{
+public class ClassOne {
+  public static final ClassTwo CLASS_TWO = new ClassTwo();
+}
+}}}
