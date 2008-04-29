@@ -1,0 +1,20 @@
+#summary An Example of a Singleton
+
+The following code shows a Singleton by our definition.
+
+{{{
+public class ClassOne {
+  private static final ClassOne INSTANCE;
+  public ClassOne getInstance() {
+    if (INSTANCE == null) {
+      INSTANCE = new ClassOne();
+    }
+    return INSTANCE;
+  }
+}
+}}}
+
+For the purposes of detection, we are not interested in whether or not there is:
+
+  * a private constructor
+  * synchronized around the new instance logic
