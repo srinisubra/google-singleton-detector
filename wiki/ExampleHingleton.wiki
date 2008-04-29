@@ -1,0 +1,20 @@
+#summary An Example of a Hingleton
+
+The following code shows a Hingleton by our definition.
+
+{{{
+public class ClassOne {
+  private static final ClassTwo INSTANCE;
+  public static ClassTwo getInstance() {
+    if (INSTANCE == null) {
+      INSTANCE = new ClassTwo();
+    }
+    return INSTANCE;
+  }
+}
+}}}
+
+For the purposes of detection, we are not interested in whether or not there is:
+
+  * a private constructor to either class
+  * synchronized around the 'new instance' logic
