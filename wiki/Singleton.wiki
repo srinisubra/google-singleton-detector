@@ -21,3 +21,10 @@ public class Singleton {
   }
 }
 }}}
+
+For the purposes of detection, we are *not* interested in whether or not there is:
+
+  * a private constructor
+  * synchronized around the new instance logic
+
+Why?  We want to be able to detect badly written Singletons too.
